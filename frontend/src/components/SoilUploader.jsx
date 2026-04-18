@@ -21,7 +21,7 @@ const SoilUploader = ({ onResult, setLoading }) => {
     formData.append('file', selectedFile);
 
     try {
-      const response = await fetch('http://localhost:8000/predict', {
+      const response = await fetch('http://3.109.183.12:8000/predict', {
         method: 'POST',
         body: formData,
       });
